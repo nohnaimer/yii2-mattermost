@@ -1,0 +1,42 @@
+{
+    "name": "nohnaimer/yii2-mattermost",
+    "description": "Yii2 extension for Mattermost",
+    "keywords": [
+        "yii2",
+        "extension",
+        "mattermost"
+    ],
+    "homepage": "https://github.com/nohnaimer/yii2-mattermost",
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Maksim Astapenko",
+            "email": "actapenko@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "yiisoft/yii2": ">=2.0.13",
+        "gnello/php-mattermost-driver": "2.14.*"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "autoload": {
+        "psr-4": {
+            "nohnaimer\\mattermost\\": "src"
+        }
+    },
+    "repositories": {
+        "asset": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
