@@ -10,13 +10,13 @@ Installation
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
 ```
-php composer.phar require --prefer-dist nohnaimer/yii2-mattermost "*"
+php composer.phar require --prefer-dist nohnaimer/yii2-mattermost "0.1.*"
 ```
 
 or add
 
 ```
-"nohnaimer/yii2-mattermost": "*"
+"nohnaimer/yii2-mattermost": "0.1.*"
 ```
 
 to the require section of your `composer.json` file.
@@ -27,8 +27,8 @@ Configuration
 Full configuration (login and password auth):
 ```php
 [
-'components' => [
-         'mattermost' => [
+    'components' => [
+        'mattermost' => [
             'class' => nohnaimer\mattermost\Connection::class,
             'driverOptions' => [
                 'scheme' => 'https',
@@ -38,12 +38,14 @@ Full configuration (login and password auth):
                 'password' => 'password',
             ],
         ],
-],
+    ],
+];
 ```
 Token auth:
 
 ```php
-'components' => [
+[
+    'components' => [
          'mattermost' => [
             'class' => nohnaimer\mattermost\Connection::class,
             'driverOptions' => [
@@ -51,7 +53,8 @@ Token auth:
                 'token' => 'token',
             ],
         ],
-],
+    ],
+];
 ```
 Usage
 -----
