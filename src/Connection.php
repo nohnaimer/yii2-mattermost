@@ -58,7 +58,7 @@ class Connection extends BaseObject
     }
 
     /**
-     * @return Driver|null
+     * @return Driver
      * @throws InvalidConfigException
      */
     public function initConnection()
