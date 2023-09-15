@@ -18,7 +18,7 @@
     "require": {
         "php": ">=7.4.0",
         "yiisoft/yii2": ">=2.0.13",
-        "gnello/php-mattermost-driver": "2.16.*"
+        "gnello/php-mattermost-driver": "2.18.*"
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest"
